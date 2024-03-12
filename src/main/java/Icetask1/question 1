@@ -16,14 +16,13 @@ public class App {
            String phoneNumber = JOptionPane.showInputDialog("Enter Phone Number:");
            int mark1 = Integer.parseInt(JOptionPane.showInputDialog("Enter Mark 1:"));
            int mark2 = Integer.parseInt(JOptionPane.showInputDialog("Enter Assignment mark:"));
-           int AssignmentMark = Integer.parseInt(JOptionPane.showInputDialog("Enter Assignment Mark"));
            int examMark = Integer.parseInt(JOptionPane.showInputDialog("Enter exam mark"));
            
            // Calculate DP status 
-           boolean dpStatus = ((mark1 + mark2 + AssignmentMark) / 3) >= 40;
+           boolean dpStatus = ((mark1 + mark2 + AssignmentMark ) / 3) => 40;
            
            // Calculate final mark
-           double courseworkAverage = ((mark1 + mark2 + AssignmentMark) / 3);
+           double courseworkAverage = ((mark1 + mark2 + AssignmentMark) / 3;
            double finalMark = (courseworkAverage * 0.4) + (examMark * 0.6);
            
            //Display results
